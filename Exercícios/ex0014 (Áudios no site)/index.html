@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Players de áudio</title>
+</head>
+<body>
+    <h1>Reprodução de áudios com HTML</h1>
+    <audio src="midia/tenhom.mp3" autoplay controls></audio>
+
+    <h1>Para navegadores que não tocam com o reprodutor padrão</h1>
+    <audio preload="metadata"> <!--preload: carrega todo o arquivo(Grande peso). metadata: carrega apenas algumas informações do arquivo(Peso medio). none: nao carrega nenhuma informação do arquivo(Mais leve)-->>
+    <!--loop: deixa o audio em loop-->>
+        <source src="midia/tenhom.mp3" type="audio/mpeg"> <!--se o de cima nao carregar, ele desce para o de baixo, incluindo o paragrafo, ou qualquer outra tag-->
+        <source src="midia/tenhom.ogg" type="audio/ogg">
+        <source src="midia/tenhom.wav" type="audio/wav">
+        <p>"caso o player nao tenha recarregado, baixe o arquivo <a href="midia/tenhom.mp3" >aqui</a> "</p>
+    </audio>
+</body>
+</html>
