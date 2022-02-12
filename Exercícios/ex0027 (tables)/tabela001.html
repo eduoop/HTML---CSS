@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            background-color: rgb(55, 94, 94);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: white;
+        }
+
+        table {
+            width: 60vw;
+            height: 30vh;
+            border-collapse: collapse;
+            background: rgb(51, 85, 85);
+        }
+
+        tr.line {
+            background-color: rgb(42, 70, 70);
+        }
+
+        td {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: center;
+            font-size: 2em;
+            color: whitesmoke;
+            vertical-align: middle;
+        }
+        .number {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>My first table</h1>
+    <table>
+        <tr>
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="line">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="number">C2</td>
+        </tr>
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td class="number">C3</td>
+        </tr>
+    </table>
+</body>
+</html>
