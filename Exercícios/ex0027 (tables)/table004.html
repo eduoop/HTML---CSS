@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de filmes preferidos</title>
+    <style>
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 700px;
+            height: 200px;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 2em;
+        }
+
+        th {
+            border: 2px solid black;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 1.30em;
+            font-weight: bold;
+        }
+
+        td {
+            border: 2px solid black;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 1.30em;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Filmes favoritos
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+
+            <tr>
+                <td>Beatriz souza</td>
+                <td>Hulk</td>
+                <td>Megatubarão</td>
+                <td>007</td>
+            </tr>
+
+            <tr>
+                <td>Cláudia Meló</td>
+                <td>Matrix</td>
+                <td>BigHero</td>
+                <td>Batman</td>
+            </tr>
+
+            <tr>
+                <th scope="rowgroup" rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocável</td>
+                <td>Aminésia</td>
+                <td>Homem Aranha</td>
+            </tr>
+
+            <tr>
+                <td>Matheus Henrrique</td>
+                <td>Wall-E</td>
+                <td>Octopussy</td>
+                <td>Doctor Strange</td>
+            </tr>
+
+            <tr>
+                <td>Eduardo Moraes</td>
+                <td>Batman</td>
+                <td>Star wars</td>
+                <td>Dune</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
