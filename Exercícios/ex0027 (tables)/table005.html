@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        caption {
+            font-size: 1.30em;
+            font-weight: bold;
+        }
+
+        th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho">
+            <col class="amarelo" span="2">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td>Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Eduardo Moraes</td>
+            <td>M</td>
+            <td>17</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Matheus Felix</td>
+            <td>M</td>
+            <td>20</td>
+            <td>Arquiteto</td>
+        </tr>
+        <tr>
+            <td>Rosana Amorim</td>
+            <td>F</td>
+            <td>36</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Otávio Costa</td>
+            <td>I</td>
+            <td>25</td>
+            <td>Piloto</td>
+        </tr>
+        <tr>
+            <td>Júlia</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Sorveteira</td>
+        </tr>
+    </table>
+</body>
+</html>
